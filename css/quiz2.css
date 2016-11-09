@@ -4,24 +4,104 @@
  - set up the document to use ems or rems based off of a 62.5% root font size
  - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering)*/
 
-html, bdy {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #eeee;
+	background: #eee;
+	font-size: 0.625rem;
 }
 
 p {
 	margin: 10px 0;
-	font-weight: bold
+	font-weight: bold;
+	position: relative;
+	left: 0px;
+	transition: left .5s ease-in;
+}
+
+p:hover {
+	left: 8px;
+	transition: left .5s ease-in;
 }
 
 section {
+	padding-left: 10px;
 	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	transition: background-color .7s ease-in;
+}
+
+section:hover {
+	background-color: aliceblue;
+	transition: background-color .7s ease-in;
 }
 
 ul {
 	list-style: none;
 }
 
-ul {
-	list-style: none;
+.accordion-toggle {
+	height: 20px;
+	text-decoration: none;
+}
+
+.accordion-hide {
+	opacity: 0;
+	height: 0px;
+	transition: height .5s ease-out, opacity .3s ease-out;
+}
+
+.accordion-show {
+	opacity: 1;
+	height: 20px;
+	transition: height .5s ease-in, opacity 1s ease-in;
+}
+
+.accordion li {
+	border: 1px solid blue;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.accordion {
+	width: 100px;
+}
+
+#clickButton, #shrugButton {
+	width: 100px;
+	height: 60px;
+	color: white;
+	background-color: black;
+	border: 1px solid grey;
+	border-radius: 5px;
+	display: block;
+	text-align:center;
+	padding-top:40px;
+	text-decoration: none;
+	transition: background-color 1s ease-in;
+}
+
+#clickButton:hover {
+	background-color: #eee;
+	transition: background-color 1s ease-in, color .5s ease-in;
+	color: black;
+}
+
+#shrugButton {
+	transition: font-size .5s ease-in;
+}
+
+#shrugButton:hover {
+	font-size: 20px;
+	transition: font-size .5s ease-in;
+}
+
+body {
+	opacity: 1;
+	transition: opacity 1s ease-out;
+}
+
+.hidden {
+	opacity: 0 !important;
+	transition: opacity 1s ease-out;
 }

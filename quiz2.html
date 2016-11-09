@@ -1,41 +1,81 @@
 <doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-400000">
-	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/quiz2.css"/>
 </head>
 <body>
 	<h1>Welcome To The Wonderful World of Debugging Code</h1>
 
 	<section id="mainSection">
-		<p>This is a paragraph, I promise.</p
+		<p>This is a paragraph, I promise.</p>
 
 		<ul class="links">
 			<li>
-				<a>Link 1<a>
+				<a href="#">Link 1</a>
 			</li>
 			<li>
 				<a href="#">Link 2</a>
 			</li>
 			<li>
-				<a href="#">Link 487
+				<a href="#">Link 487</a>
 			</li>
 		</ul>
-	
 
+		<ul class="accordion">
+			<li>
+				<a href="#" class="accordion-toggle">
+					Accordion 1
+					<div class="accordion-hide">
+						accordion-content
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="accordion-toggle">
+					Accordion 2
+					<div class="accordion-hide">
+						accordion-content
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="accordion-toggle">
+					Accordion 3
+					<div class="accordion-hide">
+						accordion-content
+					</div>
+				</a>
+			</li>
+		</ul>
+
+
+	</section>
 	<p>I am a lonely paragraph, with no immediate parent.</p>
 
-	<section id=secondarySection>
+	<section id="secondarySection">
 		<p>Woop woop!!!</p>
 		<p>See how elegantly we're spaced out?</p>
-		<p>Yeah, we're spaced out alright.<//p>
-		
+		<p>Yeah, we're spaced out alright.</p>
+
 		<ol>
-			<li>I'm like an unordered list</li>	
-			<li>But I'm more orderly<li>
+			<li>I'm like an unordered list</li>
+			<li>But I'm more orderly</li>
 			<li>That was a really bad joke.</li>
-		<ol>
+		</ol>
 	</section>
-	
+
+	<a href="#" id="clickButton">
+		Click Here When Done!
+	</a>
+
+	<br/><br/>
+
+	<a href="#" id="shrugButton">
+		¯\_(ツ)_/¯
+	</a>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/quiz2.js"></script>
 </body>
 </hmtl>
